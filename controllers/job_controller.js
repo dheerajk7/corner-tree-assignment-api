@@ -52,3 +52,10 @@ module.exports.search = async function (request, response) {
     });
   }
 };
+
+module.exports.jobList = async function (request, response) {
+  let jobs = await Job.find({});
+  return response
+    .status(200)
+    .json({ data: { jobs: jobs }, success: true, message: "Job Fetched" });
+};

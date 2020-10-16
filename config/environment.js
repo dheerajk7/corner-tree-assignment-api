@@ -10,4 +10,4 @@ const production = {
   db_path: `mongodb+srv://jevik-zayka-user:${process.env.password}@cluster0.cmbhb.mongodb.net/corner-tree-assignment>?retryWrites=true&w=majority`,
 };
 
-module.exports = production;
+module.exports = development;
