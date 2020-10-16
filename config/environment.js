@@ -1,7 +1,7 @@
 const development = {
   name: "development",
   db: "corner-tree-assignment",
-  mongoDB: "",
+  db_path: "mongodb://localhost/corner-tree-assignment",
 };
 
 const production = {

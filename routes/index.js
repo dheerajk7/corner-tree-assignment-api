@@ -5,6 +5,6 @@ var jobController = require("../controllers/job_controller");
 
 //routes
 router.post("/api/v1/create-job", jobController.createJob);
-router.post("/api/v1/search/:key", jobController.search);
+router.get("/api/v1/search/:key", jobController.search);
 
 module.exports = router;
