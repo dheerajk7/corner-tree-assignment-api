@@ -1,7 +1,8 @@
 //configuring mongo db
 const mongoose = require("mongoose");
+const env = require("../config/env");
 
-mongoose.connect("mongodb://localhost/corner-tree-assignment", {
+mongoose.connect(env.db_path, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
