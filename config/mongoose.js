@@ -1,6 +1,6 @@
 //configuring mongo db
 const mongoose = require("mongoose");
-const env = require("../config/env");
+const env = require("../config/environment");
 
 mongoose.connect(env.db_path, {
   useNewUrlParser: true,
